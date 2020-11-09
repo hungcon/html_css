@@ -28,6 +28,11 @@
     font-weight: 300;
 }
 
+.header__navbar-item:nth-child(2):hover {
+    cursor: text;
+    color: var(--white-color);
+}
+
 .header__navbar-item:hover, .header__navbar-item-link:hover {
     color: rgba(255, 255, 255, 0.4);
     cursor: pointer;
@@ -53,4 +58,71 @@
 .header__navbar-item--link {
     color: var(--white-color);
     text-decoration: none;
+}
+
+/* Header QR Code  */
+
+.header__qr {
+    width: 186px;
+    background-color: var(--white-color);
+    position: absolute;
+    left: 0;
+    top: 118%;
+    padding: 8px;
+    border-radius: 2px;
+    display: none;
+}
+
+.header__qr::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    left: 0;
+    top: -9px;
+}
+
+.header__navbar-item--has-qr:hover .header__qr {
+    display: block;
+}
+
+.header__qr-img {
+    width: 100%;
+}
+
+.header__qr-apps {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__qr-apps-img {
+    height: 14px;
+}
+
+.header__qr_apps-item:nth-child(1) {
+    margin-left: 11px;
+}
+
+.header__qr_apps-item:nth-child(2) {
+    margin-right: 11px;
+}
+
+/* Search  */
+
+.header__search {
+    margin-top: 15px;
+}
+
+.header__search-logo {
+    width: 162px;
+    height: 50px;
+}
+
+.header__search-logo a {
+    text-decoration: none;
+}
+
+.icon-shopee-logo {
+    fill: var(--white-color);
 }
