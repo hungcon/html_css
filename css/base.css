@@ -2,6 +2,8 @@
     --white-color: #FFF;
     --black-color: #000;
     --text-color: #333;
+    --primary-color: #EE4D2D;
+    --border-color: #DBDBDB;
 }
 
 * {
@@ -28,4 +30,21 @@ html {
 .grid__row {
     display: flex;
     flex-wrap: wrap;
+}
+
+.btn {
+    min-width: 142px;
+    height: 36px;
+    border: none;
+    border-radius: 2px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 0;
+    outline: none;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+.btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
 }
