@@ -7,6 +7,7 @@
 .header__navbar {
     display: flex;
     justify-content: space-between;
+    height: 40px;
 }
 
 .header__navbar-list {
@@ -226,11 +227,13 @@
 /* Search  */
 
 .header__search {
-    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    height: 80px;
 }
 
 .header__search-logo {
-    width: 162px;
+    width: 200px;
     height: 50px;
 }
 
@@ -239,7 +242,30 @@
 }
 
 .icon-shopee-logo {
+    width: 150px;
     fill: var(--white-color);
+}
+
+.header__input {
+    height: 40px;
+    flex: 1;
+    background-color: var(--white-color);
+    font-size: 1.6rem;
+    outline: none;
+    border: none;
+    box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.2);
+    border-radius: 2px;
+}
+
+.header__search-cart {
+    width: 150px;
+    text-align: center;
+}
+
+.header__cart-icon {
+    color: var(--white-color);
+    font-size: 2.4rem;
+    margin-top: 4px;
 }
 
 /* Modal Layout */
