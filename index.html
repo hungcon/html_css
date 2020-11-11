@@ -129,7 +129,26 @@
                             </svg>
                         </a>
                     </div>
-                    <input type="text" class="header__input" placeholder="Tìm kiếm...">
+                    <div class="header__input-wrap">
+                        <input type="text" class="header__input" placeholder="Tìm kiếm...">
+                        <div class="header__input-select">
+                            <span class="header__input-select-label">Trong shop</span>
+                            <i class="header__input-select-icon fas fa-angle-down"></i>
+                            <ul class="header__input-option">
+                                <li class="header__input-item ">
+                                    Trong shop
+                                    <i class="header__input-icon fas fa-check"></i>
+                                </li>
+                                <li class="header__input-item header__input-item--active">
+                                    Ngoài shop
+                                    <i class="header__input-icon fas fa-check"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="header__search-btn">
+                            <i class="header__search-btn-icon fas fa-search"></i>
+                        </button>
+                    </div>
                     <div class="header__search-cart">
                         <i class="header__cart-icon fas fa-shopping-cart"></i>
                     </div>

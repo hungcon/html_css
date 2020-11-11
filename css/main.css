@@ -123,6 +123,7 @@
     animation: headerNotifyGrowth ease-in 0.25s;
     will-change: opacity, transform;
     display: none;
+    z-index: 1;
 }
 
 .header__notification::before {
@@ -230,6 +231,7 @@
     display: flex;
     align-items: center;
     height: 80px;
+    padding: 0 8px;
 }
 
 .header__search-logo {
@@ -246,15 +248,106 @@
     fill: var(--white-color);
 }
 
-.header__input {
-    height: 40px;
+.header__input-wrap {
     flex: 1;
+    height: 40px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
     background-color: var(--white-color);
+    box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.2);
+}
+
+.header__input {
+    flex: 1;
     font-size: 1.6rem;
     outline: none;
     border: none;
-    box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.2);
+    padding: 0 16px;
+}
+
+.header__input-select {
+    border-left: 1px solid #ccc;
+    padding-left: 16px;
+    position: relative;
+}
+
+.header__input-select::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 150px;
+    top: 18px;
+    right: 0;
+}
+
+.header__input-select:hover .header__input-option {
+    display: block;
+}
+
+.header__input-select-label {
+    font-size: 1.6rem;
+    color: var(--text-color);
+}
+
+.header__input-option {
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    right: 0;
+    width: 150px;
+    background-color: var(--white-color);
     border-radius: 2px;
+    box-shadow: 0 0 3px #ccc;
+    display: none;
+}
+
+.header__input-item {
+    cursor: pointer;
+    padding: 12px 12px;
+    font-size: 1.6rem;
+}
+
+.header__input-item i {
+    display: none;
+}
+
+.header__input-icon {
+    color: var(--primary-color);
+    margin-left: 16px;
+    display: none;
+}
+
+.header__input-item--active i {
+    display: inline-block;
+}
+
+.header__input-select-icon {
+    font-size: 2rem;
+    color: #888888;
+    margin: 0 12px;
+    position: relative;
+    top: 2px
+}
+
+.header__search-btn {
+    background-color: var(--primary-color);
+    height: 32px;
+    width: 60px;
+    border: none;
+    margin-right: 12px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.header__search-btn:hover {
+    background-color: #f3694e;
+}
+
+.header__search-btn-icon {
+    color: var(--white-color);
+    font-size: 1.4rem;
 }
 
 .header__search-cart {
