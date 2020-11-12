@@ -150,8 +150,10 @@
                             </div>
                         </div>
                         <div class="header__input-select">
-                            <span class="header__input-select-label">Trong shop</span>
-                            <i class="header__input-select-icon fas fa-angle-down"></i>
+                            <div class="header__input-select__text">
+                                <span class="header__input-select-label">Trong shop</span>
+                                <i class="header__input-select-icon fas fa-angle-down"></i>
+                            </div>
                             <ul class="header__input-option">
                                 <li class="header__input-item ">
                                     Trong shop
@@ -170,10 +172,66 @@
                     <div class="header__search-cart">
                         <div class="header__cart-wrap">
                             <i class="header__cart-icon fas fa-shopping-cart"></i>
+                            <!-- Have no item: header__cart-no-item -->
                             <div class="header__cart-items">
-                                <img src="./images/no-cart.png" alt="" class="header__cart-img-no-item">
-                                <div class="header__cart-text-no-item">
-                                    Chưa có sản phẩm   
+                                <div class="header__cart-no-item">
+                                    <img src="./images/no-cart.png" alt="" class="header__cart-img-no-item">
+                                    <div class="header__cart-text-no-item">
+                                        Chưa có sản phẩm   
+                                    </div>
+                                </div>
+
+                                <div class="header__cart-have-item">
+                                    <div class="header__cart-title">
+                                        Sản phẩm đã thêm
+                                    </div>
+                                    <ul class="header__cart-list-items">
+                                        <li class="header__cart-item">
+                                            <img class="header__cart-item-img" src="./images//item.png" alt="">
+                                            <div class="header__cart-wrap">
+                                                <div class="header__cart-item-info-wrap">
+                                                    <div class="header__cart-item-name"> Son Whoo Luxury Lip Rouge mini</div>
+                                                    <div class="header__cart-item-info">
+                                                        <div class="header__cart-item-price"> 350.000đ </div>
+                                                        <div class="header__cart-item-multiple"> x </div>
+                                                        <div class="header__cart-item-quantity"> 2</div>
+                                                    </div>
+                                                </div>
+                                                <div class="header__cart-item-action">
+                                                    <div class="header__cart-item-action--delete">Xoá</div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="header__cart-item">
+                                            <img class="header__cart-item-img" src="./images//item.png" alt="">
+                                            <div class="header__cart-wrap">
+                                                <div class="header__cart-item-info-wrap">
+                                                    <div class="header__cart-item-name"> Son Whoo Luxury Lip Rouge mini</div>
+                                                    <div class="header__cart-item-info">
+                                                        <div class="header__cart-item-price"> 350.000đ </div>
+                                                        <div class="header__cart-item-multiple"> x </div>
+                                                        <div class="header__cart-item-quantity"> 2</div>
+                                                    </div>
+                                                </div>
+                                                <div class="header__cart-item-action">
+                                                    <div class="header__cart-item-action--delete">Xoá</div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="header__cart-info">
+                                        <div class="header__cart-info-total">
+                                            <div class="header__cart-info-title">Tổng tiền: </div>
+                                            <div class="header__cart-info-value"> 700.000đ</div>
+                                        </div>
+                                        <div class="header__cart-info-bonus">
+                                            <div class="header__cart-info-title">Ví tích điểm: </div>
+                                            <div class="header__cart-info-value"> +700 điểm</div>
+                                        </div>
+                                    </div>
+                                    <div class="button-watch">
+                                        <div class="btn btn--primary btn__cart-info">Xem giỏ hàng</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
