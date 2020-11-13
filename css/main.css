@@ -732,7 +732,7 @@
 /* Container */
 
 .container {
-    background-color: #cccccc61;
+    background-color: rgb(245 245 245);
 }
 
 .category {
@@ -791,22 +791,33 @@
 
 .content {
     margin-top: 16px;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 }
 
 .content__heading {
     display: flex;
     align-items: center;
+    background-color: rgba(0, 0, 0, .03);
+    padding: 0.625rem;
 }
 
-.btn--popular, .btn--newest, .btn--best-seller {
-    margin: 0 12px;
+.content__heading-title {
+    color: #555;
 }
 
-.btn--popular {
-    min-width: 120px;
-    background-color: var(--primary-color);
-    color: var(--white-color);
+.btn--selected {
+    background-color: var(--primary-color)!important;
+    color: var(--white-color)!important;
+}
+
+.btn--selected:hover {
+    background-color: #ee4d2dad;
+    box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.2);
+}
+
+.btn-popular, .btn-newest, .btn-best-seller {
+    min-width: 90px;
+    background-color: var(--white-color);
     height: 36px;
     border: none;
     border-radius: 2px;
@@ -814,13 +825,13 @@
     padding: 0;
     outline: none;
     cursor: pointer;
+    margin: 0 6px;
+    color: var(--text-color);
 }
 
-.btn--newest, .btn--best-seller {
-    background-color: var(--white-color);
+.content__list-products {
+    height: 1000px;
+    background-color: rosybrown;
+    margin-top: 20px;
 }
 
-.btn--popular:hover {
-    background-color: #ee4d2dad;
-    box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.2);
-}
